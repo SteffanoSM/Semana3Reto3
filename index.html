@@ -4,10 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TiendaMuebles</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfairisplay:wght@700&family=Raleway:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <h1>TiendaMuebles</h1>
+      <h1>Tienda<span class="spanTitle">Muebles</span></h1>
       <nav>
         <a href="#inicio">Inicio</a>
         <a href="#nosotros">Nosotros</a>
@@ -19,285 +26,304 @@
     </header>
 
     <section id="inicio">
-      <img class="imagenPrincipal" src="img/principal.jpg" />
-      <h2>Categoría de Productos</h2>
+      <div class="containerImage">
+        <img class="imagenPrincipal" src="img/principal.jpg" />
+      </div>
+      <h2 class="productCategory">Categoría de Productos</h2>
       <div class="inicioCategoria">
-        <div class="categoriaItem">
-          <img src="img/categoria1.jpg" alt="Oficina" class="categoriaImage" />
-          <button onclick="location.href='#inicio'">Oficina</button>
+        <div class="navCategory">
+          <div class="categoriaItem">
+            <img
+              src="img/categoria1.jpg"
+              alt="Oficina"
+              class="categoriaImage"
+            />
+            <button onclick="location.href='#inicio'">Oficina</button>
+          </div>
+          <div class="categoriaItem">
+            <img src="img/categoria2.jpg" alt="Hogar" class="categoriaImage" />
+            <button onclick="location.href='#inicio'">Hogar</button>
+          </div>
+          <div class="categoriaItem">
+            <img src="img/categoria3.jpg" alt="Cocina" class="categoriaImage" />
+            <button onclick="location.href='#inicio'">Cocina</button>
+          </div>
         </div>
-        <div class="categoriaItem">
-          <img src="img/categoria2.jpg" alt="Hogar" class="categoriaImage" />
-          <button onclick="location.href='#inicio'">Hogar</button>
-        </div>
-        <div class="categoriaItem">
-          <img src="img/categoria3.jpg" alt="Cocina" class="categoriaImage" />
-          <button onclick="location.href='#inicio'">Cocina</button>
-        </div>
+
         <div class="inicioSobreNosotros">
           <img class="sobreNosotrosImage" src="img/nosotros.jpg" />
-          <h2>Sobre Nosotros</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-            beatae recusandae ab minima fuga dicta fugit, quidem commodi eaque
-            animi illo nobis aperiam architecto ut ipsa vero tenetur culpa
-            veritatis alias fugiat facilis ea aspernatur. Veritatis impedit
-            corporis voluptate quam.
-          </p>
+          <div class="sobreNosotrosText">
+            <h2>Sobre Nosotros</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+              beatae recusandae ab minima fuga dicta fugit, quidem commodi eaque
+              animi illo nobis aperiam architecto ut ipsa vero tenetur culpa
+              veritatis alias fugiat facilis ea aspernatur. Veritatis impedit
+              corporis voluptate quam.
+            </p>
+          </div>
         </div>
         <div class="inicioProductos">
-          <div class="productoItem">
-            <img class="productoImage" src="img/producto1.jpg" />
-            <h3>Producto 1</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Doloremque culpa, perferendis illo quibusdam sed similique? Ipsa.
-            </p>
-            <p>$1,000,000.00</p>
-            <button type="submit" class="agregarCarrito">
-              AGREGAR AL CARRITO
-            </button>
-          </div>
-          <div class="productoItem">
-            <img class="productoImage" src="img/producto2.jpg" />
-            <h3>Producto 2</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Doloremque culpa, perferendis illo quibusdam sed similique? Ipsa.
-            </p>
-            <p>$1,000,000.00</p>
-            <button type="submit" class="agregarCarrito">
-              AGREGAR AL CARRITO
-            </button>
-          </div>
-          <div class="productoItem">
-            <img class="productoImage" src="img/producto3.jpg" />
-            <h3>Producto 3</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Doloremque culpa, perferendis illo quibusdam sed similique? Ipsa.
-            </p>
-            <p>$1,000,000.00</p>
-            <button type="submit" class="agregarCarrito">
-              AGREGAR AL CARRITO
-            </button>
-          </div>
-          <div class="productoItem">
-            <img class="productoImage" src="img/producto4.jpg" />
-            <h3>Producto 4</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Doloremque culpa, perferendis illo quibusdam sed similique? Ipsa.
-            </p>
-            <p>$1,000,000.00</p>
-            <button type="submit" class="agregarCarrito">
-              AGREGAR AL CARRITO
-            </button>
-          </div>
-          <div class="productoItem">
-            <img class="productoImage" src="img/producto5.jpg" />
-            <h3>Producto 5</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Doloremque culpa, perferendis illo quibusdam sed similique? Ipsa.
-            </p>
-            <p>$1,000,000.00</p>
-            <button type="submit" class="agregarCarrito">
-              AGREGAR AL CARRITO
-            </button>
-          </div>
-          <div class="productoItem">
-            <img class="productoImage" src="img/producto6.jpg" />
-            <h3>Producto 6</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Doloremque culpa, perferendis illo quibusdam sed similique? Ipsa.
-            </p>
-            <p>$1,000,000.00</p>
-            <button type="submit" class="agregarCarrito">
-              AGREGAR AL CARRITO
-            </button>
+          <h2 class="productCategory">Nuestros Productos</h2>
+          <div class="grid-container">
+            <div class="producto producto1">
+              <div class="producto1-contenido">
+                <img class="imagen1" src="img/producto1.jpg" alt="Producto 1" />
+                <div class="texto">
+                  <h3>Producto 1</h3>
+                  <span class="descripcion"
+                    >Proin condimentum sodales risus ut aliquet. Nunc eu neque
+                    quis sapien feugiat posuere sed nec mauris.</span
+                  >
+                  <span class="precio">$1,000,000.00</span>
+                  <button>AGREGAR AL CARRITO</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="producto producto2">
+              <img src="img/producto2.jpg" alt="Producto 2" />
+              <h3>Producto 2</h3>
+              <span class="descripcion"
+                >Proin condimentum sodales risus ut aliquet.</span
+              >
+              <span class="precio">$1,000,000.00</span>
+              <button>AGREGAR AL CARRITO</button>
+            </div>
+
+            <div class="producto producto3">
+              <img src="img/producto3.jpg" alt="Producto 3" />
+              <h3>Producto 3</h3>
+              <span class="descripcion"
+                >Proin condimentum sodales risus ut aliquet.</span
+              >
+              <span class="precio">$1,000,000.00</span>
+              <button>AGREGAR AL CARRITO</button>
+            </div>
+
+            <div class="producto producto4">
+              <img src="img/producto4.jpg" alt="Producto 4" />
+              <h3>Producto 4</h3>
+              <span class="descripcion"
+                >Proin condimentum sodales risus ut aliquet.</span
+              >
+              <span class="precio">$1,000,000.00</span>
+              <button>AGREGAR AL CARRITO</button>
+            </div>
+
+            <div class="producto producto5">
+              <img src="img/producto5.jpg" alt="Producto 5" />
+              <h3>Producto 5</h3>
+              <span class="descripcion"
+                >Proin condimentum sodales risus ut aliquet.</span
+              >
+              <span class="precio">$1,000,000.00</span>
+              <button>AGREGAR AL CARRITO</button>
+            </div>
+
+            <div class="producto producto6">
+              <img src="img/producto6.jpg" alt="Producto 6" />
+              <h3>Producto 6</h3>
+              <span class="descripcion"
+                >Proin condimentum sodales risus ut aliquet.</span
+              >
+              <span class="precio">$1,000,000.00</span>
+              <button>AGREGAR AL CARRITO</button>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="nosotros">
+    <section class="nosotros">
       <h2>Sobre Nosotros</h2>
-      <img class="nostrosImagen" src="img/nosotros.jpg" />
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
-        officia dolores aliquid accusantium laborum vitae consequuntur aliquam
-        cumque, facere beatae corrupti, officiis quod et soluta quaerat ipsam,
-        assumenda exercitationem. At atque, maxime in consequatur expedita
-        accusantium soluta nostrum vitae aperiam.
-      </p>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
-        officia dolores aliquid accusantium laborum vitae consequuntur aliquam
-        cumque, facere beatae corrupti, officiis quod et soluta quaerat ipsam,
-        assumenda exercitationem. At atque, maxime in consequatur expedita
-        accusantium soluta nostrum vitae aperiam.
-      </p>
-    </section>
-
-    <section id="tienda">
-      <h2>Nuestros Productos</h2>
-      <div class="productoItem">
-        <img class="productoImage" src="img/producto1.jpg" />
-        <h3>Producto 1</h3>
+      <div class="nosotrosContainer">
+        <img class="nostrosImagen" src="img/nosotros.jpg" />
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
-          culpa, perferendis illo quibusdam sed similique? Ipsa.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
+          officia dolores aliquid accusantium laborum vitae consequuntur aliquam
+          cumque, facere beatae corrupti, officiis quod et soluta quaerat ipsam,
+          assumenda exercitationem. At atque, maxime in consequatur expedita
+          accusantium soluta nostrum vitae aperiam.
+          <br />
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
+          officia dolores aliquid accusantium laborum vitae consequuntur aliquam
+          cumque, facere beatae corrupti, officiis quod et soluta quaerat ipsam,
+          assumenda exercitationem. At atque, maxime in consequatur expedita
+          accusantium soluta nostrum vitae aperiam.
         </p>
-        <p>$1,000,000.00</p>
-        <button type="submit" class="agregarCarrito">AGREGAR AL CARRITO</button>
-      </div>
-      <div class="productoItem">
-        <img class="productoImage" src="img/producto2.jpg" />
-        <h3>Producto 2</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
-          culpa, perferendis illo quibusdam sed similique? Ipsa.
-        </p>
-        <p>$1,000,000.00</p>
-        <button type="submit" class="agregarCarrito">AGREGAR AL CARRITO</button>
-      </div>
-      <div class="productoItem">
-        <img class="productoImage" src="img/producto3.jpg" />
-        <h3>Producto 3</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
-          culpa, perferendis illo quibusdam sed similique? Ipsa.
-        </p>
-        <p>$1,000,000.00</p>
-        <button type="submit" class="agregarCarrito">AGREGAR AL CARRITO</button>
-      </div>
-      <div class="productoItem">
-        <img class="productoImage" src="img/producto4.jpg" />
-        <h3>Producto 4</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
-          culpa, perferendis illo quibusdam sed similique? Ipsa.
-        </p>
-        <p>$1,000,000.00</p>
-        <button type="submit" class="agregarCarrito">AGREGAR AL CARRITO</button>
-      </div>
-      <div class="productoItem">
-        <img class="productoImage" src="img/producto5.jpg" />
-        <h3>Producto 5</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
-          culpa, perferendis illo quibusdam sed similique? Ipsa.
-        </p>
-        <p>$1,000,000.00</p>
-        <button type="submit" class="agregarCarrito">AGREGAR AL CARRITO</button>
-      </div>
-      <div class="productoItem">
-        <img class="productoImage" src="img/producto6.jpg" />
-        <h3>Producto 6</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
-          culpa, perferendis illo quibusdam sed similique? Ipsa.
-        </p>
-        <p>$1,000,000.00</p>
-        <button type="submit" class="agregarCarrito">AGREGAR AL CARRITO</button>
       </div>
     </section>
 
-    <section id="blog">
+    <section class="tienda">
+      <h2 class="productCategory">Nuestros Productos</h2>
+      <div class="grid-container">
+        <div class="producto producto1">
+          <div class="producto1-contenido">
+            <img class="imagen1" src="img/producto1.jpg" alt="Producto 1" />
+            <div class="texto">
+              <h3>Producto 1</h3>
+              <span class="descripcion"
+                >Proin condimentum sodales risus ut aliquet. Nunc eu neque quis
+                sapien feugiat posuere sed nec mauris.</span
+              >
+              <span class="precio">$1,000,000.00</span>
+              <button>AGREGAR AL CARRITO</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="producto producto2">
+          <img src="img/producto2.jpg" alt="Producto 2" />
+          <h3>Producto 2</h3>
+          <span class="descripcion"
+            >Proin condimentum sodales risus ut aliquet.</span
+          >
+          <span class="precio">$1,000,000.00</span>
+          <button>AGREGAR AL CARRITO</button>
+        </div>
+
+        <div class="producto producto3">
+          <img src="img/producto3.jpg" alt="Producto 3" />
+          <h3>Producto 3</h3>
+          <span class="descripcion"
+            >Proin condimentum sodales risus ut aliquet.</span
+          >
+          <span class="precio">$1,000,000.00</span>
+          <button>AGREGAR AL CARRITO</button>
+        </div>
+
+        <div class="producto producto4">
+          <img src="img/producto4.jpg" alt="Producto 4" />
+          <h3>Producto 4</h3>
+          <span class="descripcion"
+            >Proin condimentum sodales risus ut aliquet.</span
+          >
+          <span class="precio">$1,000,000.00</span>
+          <button>AGREGAR AL CARRITO</button>
+        </div>
+
+        <div class="producto producto5">
+          <img src="img/producto5.jpg" alt="Producto 5" />
+          <h3>Producto 5</h3>
+          <span class="descripcion"
+            >Proin condimentum sodales risus ut aliquet.</span
+          >
+          <span class="precio">$1,000,000.00</span>
+          <button>AGREGAR AL CARRITO</button>
+        </div>
+
+        <div class="producto producto6">
+          <img src="img/producto6.jpg" alt="Producto 6" />
+          <h3>Producto 6</h3>
+          <span class="descripcion"
+            >Proin condimentum sodales risus ut aliquet.</span
+          >
+          <span class="precio">$1,000,000.00</span>
+          <button>AGREGAR AL CARRITO</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog">
       <h2>Nuestro Blog</h2>
-      <div class="blogItem">
-        <h3>Guía de Colores</h3>
-        <img class="blogImage" src="img/nosotros.jpg" />
-        <article><b>Fecha:</b> 22 de Octubre de 2022</article>
-        <article><b>Escrito por:</b> TiendaMuebles</article>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-          quisquam excepturi id ab dolorem, quae neque eaque. Ab esse nesciunt
-          ullam aliquid est ex culpa animi consequatur praesentium odio dolor
-          reiciendis eum voluptas eos, corrupti fugiat tenetur quaerat facilis
-          quos?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-          quisquam excepturi id ab dolorem, quae neque eaque. Ab esse nesciunt
-          ullam aliquid est ex culpa animi consequatur praesentium odio dolor
-          reiciendis eum voluptas eos, corrupti fugiat tenetur quaerat facilis
-          quos?
-        </p>
-        <button type="button">LEER</button>
-      </div>
-      <div class="navegacion">
-        <h3>Otras Entradas de Blog</h3>
-        <label>Guía de Colores</label>
-        <label>Nuevos Modelos</label>
-        <label>Guía para diseño de interiores</label>
-        <label>Guía para diseño de exteriores</label>
+      <div class="gridBlog">
+        <div class="blogItem">
+          <h3>Guía de Colores</h3>
+          <img class="blogImage" src="img/nosotros.jpg" />
+          <article><b>Fecha:</b> <span>22 de Octubre de 2022</span></article>
+          <article><b>Escrito por:</b> <span>TiendaMuebles</span></article>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            quisquam excepturi id ab dolorem, quae neque eaque. Ab esse nesciunt
+            ullam aliquid est ex culpa animi consequatur praesentium odio dolor
+            reiciendis eum voluptas eos, corrupti fugiat tenetur quaerat facilis
+            quos?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            quisquam excepturi id ab dolorem, quae neque eaque. Ab esse nesciunt
+            ullam aliquid est ex culpa animi consequatur praesentium odio dolor
+            reiciendis eum voluptas eos, corrupti fugiat tenetur quaerat facilis
+            quos?
+          </p>
+          <button type="button">LEER</button>
+        </div>
+        <div class="navegacion">
+          <h3>Otras Entradas de Blog</h3>
+          <label>Guía de Colores</label>
+          <label>Nuevos Modelos</label>
+          <label>Guía para diseño de interiores</label>
+          <label>Guía para diseño de exteriores</label>
+        </div>
       </div>
     </section>
 
-    <section id="galeria">
+    <section class="galeria">
       <h2>Galería</h2>
       <div class="galeriaGrid">
-        <img class="galeriaImage" src="img/galeria_01.jpg" />
-        <img class="galeriaImage" src="img/galeria_02.jpg" />
-        <img class="galeriaImage" src="img/galeria_03.jpg" />
-        <img class="galeriaImage" src="img/galeria_04.jpg" />
-        <img class="galeriaImage" src="img/galeria_05.jpg" />
-        <img class="galeriaImage" src="img/galeria_06.jpg" />
-        <img class="galeriaImage" src="img/galeria_07.jpg" />
-        <img class="galeriaImage" src="img/galeria_08.jpg" />
-        <img class="galeriaImage" src="img/galeria_09.jpg" />
+        <div class="galeriaColumns">
+          <img class="galeriaImage" src="img/galeria_01.jpg" />
+          <img class="galeriaImage" src="img/galeria_02.jpg" />
+          <img class="galeriaImage" src="img/galeria_03.jpg" />
+          <img class="galeriaImage" src="img/galeria_04.jpg" />
+          <img class="galeriaImage" src="img/galeria_05.jpg" />
+          <img class="galeriaImage" src="img/galeria_06.jpg" />
+          <img class="galeriaImage" src="img/galeria_07.jpg" />
+          <img class="galeriaImage" src="img/galeria_08.jpg" />
+          <img class="galeriaImage" src="img/galeria_09.jpg" />
+        </div>
       </div>
     </section>
 
-    <section id="contacto">
+    <section class="contacto">
       <h2>Contacto</h2>
-      <fieldset class="contactoFormulario">
-        <legend>TUS DATOS</legend>
-        <form>
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" required /><br /><br />
-          <label for="asunto">Asunto:</label>
-          <input type="text" id="asunto" required /><br /><br />
-          <label for="email">Correo Electrónico:</label>
-          <input type="email" id="email" required /><br /><br />
-          <label for="telefono">Teléfono:</label>
-          <input type="tel" id="telefono" required /><br /><br />
-          <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje" rows="4" required></textarea><br /><br />
-        </form>
-      </fieldset>
-      <fieldset class="paisFormulario">
-        <legend>PAIS</legend>
-        <label for="pais">Pais</label>
-        <select id="pais">
-          <option>--Seleccione--</option>
-          <option>México</option>
-          <option>Perú</option>
-          <option>Colombia</option>
-          <option>Argentina</option>
-          <option>España</option>
-          <option>Chile</option>
-        </select>
-      </fieldset>
-      <fieldset class="informacionFormulario">
-        <legend>INFORMACION EXTRA</legend>
-        <div>
-          <label for="cliente">Cliente</label>
-          <input type="radio" id="cliente" />
-          <label for="proveedor">Proveedor</label>
-          <input type="radio" id="proveedor" />
-        </div>
-        <label for="interes">Categoría de Interes:</label>
-        <textarea id="interes" rows="4" required></textarea>
-      </fieldset>
-      <button type="submit">ENVIAR FORMULARIO</button>
+      <div class="contactContainer">
+        <fieldset class="contactoFormulario">
+          <legend>TUS DATOS</legend>
+          <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required /><br /><br />
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" required /><br /><br />
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" required /><br /><br />
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" required /><br /><br />
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" rows="4" required></textarea><br /><br />
+          </form>
+        </fieldset>
+        <fieldset class="paisFormulario">
+          <legend>PAIS</legend>
+          <label for="pais">Pais</label>
+          <select id="pais">
+            <option>--Seleccione--</option>
+            <option>México</option>
+            <option>Perú</option>
+            <option>Colombia</option>
+            <option>Argentina</option>
+            <option>España</option>
+            <option>Chile</option>
+          </select>
+        </fieldset>
+        <fieldset class="informacionFormulario">
+          <legend>INFORMACION EXTRA</legend>
+          <div>
+            <label for="cliente">Cliente</label>
+            <input type="radio" id="cliente" />
+            <label for="proveedor">Proveedor</label>
+            <input type="radio" id="proveedor" />
+          </div>
+          <label for="interes">Categoría de Interes:</label>
+          <textarea id="interes" rows="4" required></textarea>
+        </fieldset>
+        <button type="submit">ENVIAR FORMULARIO</button>
+      </div>
     </section>
 
     <footer>
-      <table>
+      <table class="footOne">
         <tr>
           <th>Categorías</th>
         </tr>
@@ -317,7 +343,7 @@
           <td>Dormitorio</td>
         </tr>
       </table>
-      <table>
+      <table class="footTwo">
         <tr>
           <th>Sobre Nosotros</th>
         </tr>
@@ -337,7 +363,7 @@
           <td>Términos del Servicio</td>
         </tr>
       </table>
-      <table>
+      <table class="footThree">
         <tr>
           <th>Soporte</th>
         </tr>

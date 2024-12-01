@@ -1,0 +1,419 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  width: 100%;
+}
+
+header {
+  margin-top: 60px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  font-size: 50px;
+}
+
+.spanTitle {
+  color: #037bc0;
+}
+
+nav {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  overflow: hidden;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  border-top: 1px solid rgb(143, 143, 143);
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.containerImage {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  height: 500px;
+  overflow: hidden;
+}
+
+.imagenPrincipal {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.productCategory {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+
+.navCategory {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 25px;
+  padding: 20px;
+}
+
+.categoriaItem {
+  max-width: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.categoriaItem img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.categoriaItem button {
+  position: sticky;
+  width: 100%;
+  background-color: white;
+  color: black;
+  padding: 30px;
+  text-align: center;
+  font-size: 1rem;
+  border: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  border-radius: 0 0 15px 0;
+}
+
+.categoriaItem:hover button {
+  background-color: #037bc0;
+  color: white;
+}
+
+.inicioSobreNosotros {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: auto;
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+.sobreNosotrosImage,
+.sobreNosotrosText {
+  flex: 1 1 50%;
+}
+
+.sobreNosotrosImage {
+  width: 50%;
+  height: auto;
+  display: block;
+}
+
+.sobreNosotrosText {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  gap: 50px;
+  font-size: 30px;
+  background-color: #037bc0;
+  color: white;
+}
+
+.sobreNosotrosText p {
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;
+}
+
+.grid-container {
+  display: grid;
+  grid-template:
+    "producto1 producto1 producto1 producto1 producto1 producto1"
+    "producto2 producto2 producto2 producto3 producto3 producto3"
+    "producto4 producto4 producto5 producto5 producto6 producto6";
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.producto {
+  background-color: #037bc0;
+  color: white;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.producto img {
+  width: 100%;
+  height: 300px;
+}
+
+h3 {
+  margin: 10px 0 5px;
+  font-size: 1.5rem;
+}
+
+.descripcion {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.precio {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #8cbc00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #7aa200;
+}
+
+.producto1 {
+  grid-column: span 6;
+}
+
+.producto2,
+.producto3 {
+  grid-column: span 3;
+}
+
+.producto4,
+.producto5,
+.producto6 {
+  grid-column: span 2;
+}
+
+.imagen1,
+.texto {
+  flex: 1 1 50%;
+}
+
+.producto1-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.producto1 img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.producto1 .texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 55%;
+  padding-left: 20px;
+}
+
+.producto1 h3 {
+  margin: 0;
+}
+
+.producto1 .descripcion {
+  margin: 10px 0;
+}
+
+.producto1 button {
+  margin-right: 10px;
+}
+
+.nosotros h2 {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  font-size: 40px;
+}
+
+.nosotrosContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.nosotrosContainer img,
+.nosotrosContainer p {
+  flex: 1 1 50%;
+}
+
+.nosotrosContainer img {
+  width: 50%;
+  height: auto;
+  display: block;
+  padding: 10%;
+}
+
+.nosotrosContainer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+}
+
+.blog h2 {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  font-size: 40px;
+}
+
+.gridBlog {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+}
+
+.blogItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin-left: 15%;
+  padding-right: 15%;
+  line-height: 1.5;
+}
+
+.blogItem h3 {
+  font-size: 30px;
+}
+
+.blogItem article,
+.blogItem p,
+.blogItem button {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
+
+.blogImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.blogItem span {
+  color: #037bc0;
+}
+
+.navegacion {
+  display: flex;
+  flex-direction: column;
+  justify-items: start;
+}
+
+.navegacion h3 {
+  font-size: 30px;
+}
+
+.galeria h2 {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  font-size: 40px;
+}
+
+.galeriaGrid {
+  display: flex;
+  padding: 10px;
+  width: 120vh;
+  justify-content: center;
+  margin-left: 25%;
+}
+
+.galeriaImage {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  padding: 10px;
+}
+
+.contacto h2 {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  font-size: 40px;
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 30%;
+  margin-left: 35%;
+  gap: 30px;
+}
+
+.contactContainer legend {
+  background-color: #005485;
+  color: white;
+  text-align: center;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.contactContainer label {
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.contactContainer input,
+.contactContainer option,
+.contactContainer textarea {
+  border: #bebcbc 1px solid;
+}
+
+footer{
+    display:flex;
+    justify-content: center;
+    align-items: start;
+    gap: 60px;
+    border-top: 1px solid rgb(143, 143, 143);
+    line-height: 2;
+    text-align: left;
+    font-size: 30px;
+}
+
+footer td{
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+}
